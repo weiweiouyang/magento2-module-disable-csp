@@ -12,16 +12,13 @@ Install the module via Composer:
 
 ## How it Works
 
-After installation, this module disables the following two events responsible for enforcing CSP in the checkout process:
-
-- `layout_render_before_csp_can_render_instructions`
-- `layout_render_before_csp_can_render_instructions_checkout`
-
-By disabling these events, you can effectively bypass the CSP enforcement without completely disabling the `Module_Csp`, which may still be required for other functionalities or security measures in your Magento store.
+After installation, this module disables the specific event in module CSP. You can then effectively bypass the CSP enforcement without completely disabling the `Module_Csp`, which may still be required for other functionalities or security measures in your Magento store.
 
 ## Usage
 
 No further configuration is required. The module will automatically disable the specified events upon installation.
+
+**Do not install it if you need to maintain PCI DSS compliance!**
 
 ## Compatibility
 
