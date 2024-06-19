@@ -1,0 +1,21 @@
+{
+  "name": "wouyang/module-disable-csp",
+  "version": "1.0.0",
+  "description": "Module to disable Csp functionality for those who does not need it.",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "magento/module-csp": "100.4.*"
+  },
+  "license": [
+    "MIT"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Wouyang\\DisableCsp\\": ""
+    }
+  }
+}
